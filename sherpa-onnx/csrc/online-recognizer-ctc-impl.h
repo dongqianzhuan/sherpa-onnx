@@ -37,7 +37,7 @@ static OnlineRecognizerResult Convert(const OnlineCtcDecoderResult &src,
     r.text.append(sym);
     if (sym.size() == 1) {
       std::ostringstream os;
-      os << "<0x" std::hex << std::uppercase << static_cast<int32_t>(sym[0])
+      os << "<0x" << std::hex << std::uppercase << static_cast<int32_t>(sym[0])
          << ">";
       sym = os.str();
     }
